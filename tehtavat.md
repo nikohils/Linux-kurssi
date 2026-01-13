@@ -1,2 +1,0 @@
-#Linux kurssi
-H0
