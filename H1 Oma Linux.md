@@ -4,4 +4,4 @@
 ## Tekijä:
 Niko
 ## Ympäristö:
-Vanha alunperin Windows 10 asennuksella ollut Dell Precision M4600. Koneessa ollut noin puoli vuotta asennettuna Linux Mint. Tämänhetkinen versio 22.2 Cinnamon.
+Vanha, alunperin Windows 10 asennuksella ollut, Dell Precision M4600. Koneessa ollut noin puoli vuotta asennettuna Linux Mint. Tämänhetkinen versio 22.2 Cinnamon, versiolla 6.4.8.
