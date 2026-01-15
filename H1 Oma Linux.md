@@ -7,7 +7,7 @@ Niko
 Vanha, alunperin Windows 10 asennuksella ollut, Dell Precision M4600. Intel core i7 2720QM (neljä ydintä), 16GB RAM muistia, Nvidia Quadro 2000M näytönohjain (jota tosin en ole saanut toimimaan koska suljetut ajurit ja varsin vanha ohjain).
 Koneessa ollut noin puoli vuotta asennettuna Linux Mint. Tämänhetkinen versio 22.2 Cinnamon, versiolla 6.4.8.
 ## Tiivistelmä:
-Asensin Debian 13 -käyttöjärjestelmän virtuaalikoneeseen opintojakson harjoitusta varten. Asennus kohtasin aluksi haasteita prosessoriarkkitehtuurin ja kirjautumisen kanssa, mutta ne sain ratkaistua. Lopulta järjestelmä saatiin toimintakuntoon ja kirjautuminen onnistui varsin helposti.
+Asensin Debian 13 -käyttöjärjestelmän virtuaalikoneeseen opintojakson harjoitusta varten. Asennuksessa kohtasin aluksi haasteita prosessoriarkkitehtuurin ja kirjautumisen kanssa, mutta ne sain ratkaistua. Lopulta sain järjestelmän toimintakuntoon ja kirjautuminen onnistui varsin helposti.
 ## Asennusprosessi:
 1. Latasin Debian 13 ISO-tiedoston virallisilta sivuilta. Aluksi fläshäsin tiedoston USB-tikulle balenaEtcherillä, mutta totesin asennusvaiheessa, että VirtualBox osaa lukea suoraan .iso-tiedostoa, joka on nopeampaa. Palautin USB-tikun alkuperäiseen kokoonsa Linuxin Levyt-sovelluksella, joka on omasta mielestäni selkeäkäyttöisempi kuin Windowsin vastaava ohjelma.
 2. Loin VirtualBoxissa uuden virtuaalikoneen seuraavilla asetuksilla:
