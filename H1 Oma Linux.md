@@ -5,9 +5,9 @@
 Niko
 ## Ympäristö:
 Vanha, alunperin Windows 10 asennuksella ollut, Dell Precision M4600. Koneessa ollut noin puoli vuotta asennettuna Linux Mint. Tämänhetkinen versio 22.2 Cinnamon, versiolla 6.4.8.
-## Tiivistelmä
+## Tiivistelmä:
 Asensin Debian 13 -käyttöjärjestelmän virtuaalikoneeseen opintojakson harjoitusta varten. Asennus kohtasin aluksi haasteita prosessoriarkkitehtuurin ja kirjautumisen kanssa, mutta ne sain ratkaistua. Lopulta järjestelmä saatiin toimintakuntoon ja kirjautuminen onnistui varsin helposti.
-## Asennusprosessi
+## Asennusprosessi:
 1. Latasin Debian 13 ISO-tiedoston virallisilta sivuilta. Aluksi fläshäsin tiedoston USB-tikulle balenaEtcherillä, mutta totesin asennusvaiheessa, että VirtualBox osaa lukea suoraan .iso-tiedostoa, joka on nopeampaa. Palautin USB-tikun alkuperäiseen kokoonsa Linuxin Levyt-sovelluksella, joka on omasta mielestäni selkeäkäyttöisempi kuin Windowsin vastaava ohjelma.
 2. Loin VirtualBoxissa uuden virtuaalikoneen seuraavilla asetuksilla:
    - Nimi: Debian 13
@@ -30,3 +30,7 @@ Asensin Debian 13 -käyttöjärjestelmän virtuaalikoneeseen opintojakson harjoi
   - Testasin näppäimistöasettelun joka vastasi suomea. Käytössä ei tosin ollut pohjoismaisia merkkejä muutenkaan.
   - Lopulta käynnistin virtuaalikoneen uudelleen, joka nollasi tilanteen ja pääsin kirjautumaan käyttöjärjestelmään. Mysteeriksi jäi mikä tilanteessa oli pielessä.
 7. Debian 13 on nyt asennettu ja se toimii Dell Precision M4600 -koneella riittävän sujuvasti. Seuraavaksi tutustutaan käyttöjärjestelmään tarkemmin ja asennetaan tarvittaessa lisäosia.
+## Lähteet:
+- Tero Karvinen 2006: Raportin kirjoittaminen. http://terokarvinen.com
+- Debian projekti: Debian 13 (Trixie) asennusmedia.
+- Keskustelu tekoälyassistentin (Gemini) kanssa 14.1.2026: Dell M4600 koneen suorituskyky Linux mintin, virtuaalikoneen ja Debian 13 asennuksen kanssa.
