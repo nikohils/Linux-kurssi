@@ -4,7 +4,8 @@
 ## Tekijä:
 Niko
 ## Ympäristö:
-Vanha, alunperin Windows 10 asennuksella ollut, Dell Precision M4600. Koneessa ollut noin puoli vuotta asennettuna Linux Mint. Tämänhetkinen versio 22.2 Cinnamon, versiolla 6.4.8.
+Vanha, alunperin Windows 10 asennuksella ollut, Dell Precision M4600. Intel core i7 2720QM (neljä ydintä), 16GB RAM muistia, Nvidia Quadro 2000M näytönohjain (jota tosin en ole saanut toimimaan koska suljetut ajurit ja varsin vanha ohjain).
+Koneessa ollut noin puoli vuotta asennettuna Linux Mint. Tämänhetkinen versio 22.2 Cinnamon, versiolla 6.4.8.
 ## Tiivistelmä:
 Asensin Debian 13 -käyttöjärjestelmän virtuaalikoneeseen opintojakson harjoitusta varten. Asennus kohtasin aluksi haasteita prosessoriarkkitehtuurin ja kirjautumisen kanssa, mutta ne sain ratkaistua. Lopulta järjestelmä saatiin toimintakuntoon ja kirjautuminen onnistui varsin helposti.
 ## Asennusprosessi:
