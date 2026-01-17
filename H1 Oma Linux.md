@@ -1,6 +1,6 @@
 # Raportti: Debian 13 asennus virtuaalikoneeseen
 ## Päivämäärä:
-14.1.2026
+17.1.2026
 ## Tekijä:
 Niko
 ## Ympäristö:
