@@ -47,4 +47,15 @@ Kokeiltaessa komentoa htop (Hisham's top, nimetty kehittäjänsä mukaan) saatii
 
 <img width="1255" height="644" alt="Kuvakaappaus 2026-01-22 20-05-03" src="https://github.com/user-attachments/assets/7df13d54-38f5-467d-9841-b0945dd890cf" />
 
-## c) 
+## c) FHS - Filesystem Hierarchy Standard
+/ (Juurihakemisto)
+
+/home (Käyttäjien kotihakemistot ovat täällä)
+
+/home/nhi (Kyseisen käyttäjän kansiot ja tiedostot ovat täällä)
+
+/etc (Kaikki tietokoneen ja käyttöjärjestelmän tiedostot ovat täällä)
+
+/media (Esimerkiksi USB muistitikku näkyy täällä)
+
+/var/log (Järjestelmän lokitiedot)
