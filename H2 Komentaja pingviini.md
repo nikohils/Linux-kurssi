@@ -28,12 +28,17 @@ Ylläolevat havainnot tehty sivustosta (https://terokarvinen.com/2020/command-li
   - Tree ("Visuaalisoi" kansiorakennetta UNIX pohjaiseen näkymään).
   - Curl ((Client URL) jolla voi siirtää tietoa ja dataa palvelimien välillä sekä hakea tietoa).
   - htop (Näyttää suoritettavat ohjelmat, prosessit ja niiden vaatimat resurssit samankaltaisesti kuin windows koneessa tehtävienhallinta).
+
 <img width="819" height="512" alt="Kuvakaappaus 2026-01-22 19-56-28" src="https://github.com/user-attachments/assets/8c4617ce-39c1-4314-9ea1-48c4052fee79" />
 
 Onnistunut asennus ei suoranaisesti kerro, että asennukset ovat onnistuneet. Riveiltä on mahdollista kuitenkin tulkita montako ohjelmaa on asennettu, poistettu tai päivitetty. Minulla oli ennestään asennettuna tree sekä curl ja uutena asennettiin htop.
+
 <img width="826" height="516" alt="Kuvakaappaus 2026-01-22 19-58-12" src="https://github.com/user-attachments/assets/f4c4a1c5-3b94-445c-ab24-f9219da43872" />
 
 Kokeiltaessa komentoa tree, kannattaa ensin pwd (Print Working Direcotry) komennolla tarkastaa missä kansiossa olet. Tämän jälkeen komennolla tree saat visualisoidumman näkymän kansiorakenteesta.
 
 <img width="1068" height="705" alt="Kuvakaappaus 2026-01-22 19-59-10" src="https://github.com/user-attachments/assets/6f407e99-06e5-4094-a539-51dfd0c62a30" />
 
+Kokeiltaessa komentoa curl täytyy hieman jo tietää mitä tietoa haluaa etsiä internetistä tai toiselta palvelimelta. Tämä komento oli itselleni vieras ja tähän etsin vinkkejä internetistä mitä komennolla voisi tehdä. Päädyin kokeilemaan sääennusteen hakemista, joka oli hauska ja mielenkiintoinen kokeilu. Lopputulos ei tosin ole visuaalisesti aivan yhtä miellyttävä kuin se, että tarkastaisi puhelimella Forecan sivut. Tulos on kuitenkin ymmärrettävä ja saatiin testattua, että komennolla saadaan haettua tietoa ulkopuolelta. Komentona käytettiin _curl wttr.in/Helsinki_. (www.geeksforgeeks.org).
+
+<img width="1256" height="764" alt="Kuvakaappaus 2026-01-22 20-00-17" src="https://github.com/user-attachments/assets/dbc8c96e-4739-4b25-ae82-ece19451b980" />
