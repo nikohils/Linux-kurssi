@@ -23,7 +23,7 @@ Ylläolevat havainnot tehty sivustosta (https://terokarvinen.com/2020/command-li
 ## a) Micro editorin asennus 22.1.2026 19:45
 - Editorin asentamiseen käytettiin komentoa _sudo apt-get install micro_. Ohjelma tarvitsee noin 15MB levytilaa ja ennen asentumistaan kysyy lupaa levytilan käyttöön (y/n). Tähän vastataan myöntävästi (y).
 
-## b) Uudet komentoriviohjelmat 22.1.2026 19:50
+## b) Uudet komentoriviohjelmat 22.1.2026 19:50 - 20:30
 - Kysyin Geminiltä vinkit kahteen asennettavaan ohjelmaan. Olin itse valinnut tree ohjelmiston asennettavaksi koska se vaikutti luennon perusteella kätevältä ohjelmalta. Ohjelmien asentaminen samanaikaisesti hoitui kätevästi komennolla _sudo apt-get install -y htop tree curl_. Komento koostuu elementeistä (Super User DO), apt (application), get (get/hae), install (install/asenna), (-y, yes/kyllä kaikkeen) sekä kolmesta asennettavasta ohjelmasta. Ennen asennusta kysytään salasanaa jotta asennuksen voi suorittaa ja lainata pääkäyttäjän (SUDO) oikeuksia. Asennetut ohjelmat olivat:
   - Tree ("Visuaalisoi" kansiorakennetta UNIX pohjaiseen näkymään).
   - Curl ((Client URL) jolla voi siirtää tietoa ja dataa palvelimien välillä sekä hakea tietoa).
@@ -42,3 +42,9 @@ Kokeiltaessa komentoa tree, kannattaa ensin pwd (Print Working Direcotry) komenn
 Kokeiltaessa komentoa curl täytyy hieman jo tietää mitä tietoa haluaa etsiä internetistä tai toiselta palvelimelta. Tämä komento oli itselleni vieras ja tähän etsin vinkkejä internetistä mitä komennolla voisi tehdä. Päädyin kokeilemaan sääennusteen hakemista, joka oli hauska ja mielenkiintoinen kokeilu. Lopputulos ei tosin ole visuaalisesti aivan yhtä miellyttävä kuin se, että tarkastaisi puhelimella Forecan sivut. Tulos on kuitenkin ymmärrettävä ja saatiin testattua, että komennolla saadaan haettua tietoa ulkopuolelta. Komentona käytettiin _curl wttr.in/Helsinki_. (www.geeksforgeeks.org).
 
 <img width="1256" height="764" alt="Kuvakaappaus 2026-01-22 20-00-17" src="https://github.com/user-attachments/assets/dbc8c96e-4739-4b25-ae82-ece19451b980" />
+
+Kokeiltaessa komentoa htop (Hisham's top, nimetty kehittäjänsä mukaan) saatiin esille aktiivisesti, noin sekunnin välein, päivittyvä listaus prosesseista ja niiden resurssien käytöstä.
+
+<img width="1255" height="644" alt="Kuvakaappaus 2026-01-22 20-05-03" src="https://github.com/user-attachments/assets/7df13d54-38f5-467d-9841-b0945dd890cf" />
+
+## c) 
