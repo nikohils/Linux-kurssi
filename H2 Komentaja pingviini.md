@@ -108,3 +108,7 @@ Kätevä toiminto/komento jonka löysin on _-i_ (ignore case) joka ohittaa "case
 Etsin omaan kyttäjätunnukseeni liittyviä tietoja komennolla _grep "nhi" /etc/passwd_. Esille tullut tieto vahvisti minun olevan ensimmäinen ihmiskäyttäjä koneella (1000). Sitä aiemmat käyttäjät (<1000) on varattu käyttöjärjestelmälle.
 
 <img width="821" height="515" alt="Kuvakaappaus 2026-01-24 07-50-24" src="https://github.com/user-attachments/assets/4eed5ca0-b241-49ef-9332-6017e8b386a1" />
+
+## e) Pipe eli "putket"
+Putket yhdistävät kaksi tai useamman komennon toisiinsa siten, että ne tekevät yhteistyötä. Putken " | " vasemmalla puolella oleva on ns. lähde ja oikealla puolella on komento. Jos haluaisin esimerkiksi etsiä tiedostoa ja käyttäisin pelkästään komentoa _ls "/kansionimi"_ saisin pahimmillaan satoja merkkejä ruudulle.
+Käyttämällä "Putkia" voidaan rajata ruudulle ilmestyvää tietoa. Ei kirjoiteta aiemmin mainittua komentoa vaan sen sijaan _ls /kansionimi | grep "tiedostonimi"_ saadaan haettua vain kyseistä etsittyä tietoa. Tässä voi olla tarpeen huomioida vielä _-i_ komento jotta ruudulle ilmestyy tiedot isoilla ja pienillä kirjaimilla.
