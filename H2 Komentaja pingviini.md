@@ -20,7 +20,7 @@ Komentorivin merkitys: Linuxin ja BSD:n komentorivi on säilynyt käytössä vuo
 
 Ylläolevat havainnot tehty sivustosta (https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited). Sivusto luettu 22.1.2026.
 
-## a) Micro editorin asennus 22.1.2026 19:45
+## a) Micro editorin asennus 22.1.2026 19:45 - 19:50
 - Editorin asentamiseen käytettiin komentoa _sudo apt-get install micro_. Ohjelma tarvitsee noin 15MB levytilaa ja ennen asentumistaan kysyy lupaa levytilan käyttöön (y/n). Tähän vastataan myöntävästi (y).
 
 ## b) Uudet komentoriviohjelmat 22.1.2026 19:50 - 20:30
@@ -47,7 +47,7 @@ Kokeiltaessa komentoa _htop_ (Hisham's top, nimetty kehittäjänsä mukaan) saat
 
 <img width="1068" height="705" alt="Kuvakaappaus 2026-01-22 19-59-10" src="https://github.com/user-attachments/assets/7665c3a1-d3cc-455f-9064-5cfb5c5b335a" />
 
-## c) FHS - Filesystem Hierarchy Standard
+## c) FHS - Filesystem Hierarchy Standard 24.1.2026 06:00 - 07:10.
 / (Juurihakemisto)
 Tässä kansiossa on juuri kaikelle ja kaikki kansiot sekä tiedostot näkyvät sen alla.
 
@@ -59,12 +59,35 @@ Tämä kansio on kotikansio kaikille käyttäjille. Tällä koneella ei ole muit
 <img width="828" height="519" alt="Kuvakaappaus 2026-01-24 06-06-55" src="https://github.com/user-attachments/assets/0543f857-4b78-4cd2-bbe6-0f161be51a4b" />
 
 /home/nhi (Kyseisen käyttäjän kansiot ja tiedostot ovat täällä)
-Olen kirjautuneena käyttäjänä nhi ja allaolevassa kuvassa on näkymä kaikkiin tiedostoihin omassa kansiossani. Komennolla ls -a (-a, näyttää kaikki, myös piilotiedostot) saan näkyviin kaikki kansiot ja tiedostot kansiossa. Pisteellä alkavat ovat piilotettuja eivätkä ne näy normaalisti.
+Olen kirjautuneena käyttäjänä nhi ja allaolevassa kuvassa on näkymä kaikkiin tiedostoihin omassa kansiossani. Komennolla _ls -a_ (-a, näyttää kaikki, myös piilotiedostot) saan näkyviin kaikki kansiot ja tiedostot kansiossa. Pisteellä alkavat ovat piilotettuja eivätkä ne näy normaalisti.
 
 <img width="828" height="518" alt="Kuvakaappaus 2026-01-24 06-10-21" src="https://github.com/user-attachments/assets/98266383-6e12-48e7-b9e1-f04191addb4f" />
 
 /etc (Kaikki tietokoneen ja käyttöjärjestelmän tiedostot ovat täällä)
+Tässä kansiossa sijaitsee kaikki tietokoneen ja käyttöjärjestelmän toimimiseen liittyvä tieto. Tässä kansiossa ei kotikäyttäjän tarvitse juurikaan toimia. Komennoll _ls -F_ (-F, näyttää kansiot kenoviivalla) saan näkyviin kaikki kansiot etc kansion sisällä. Kansioita on niin paljon, etteivät ne mahdu yhteen näkymään kannettavan näytöllä.
+
+<img width="1275" height="769" alt="Kuvakaappaus 2026-01-24 06-11-55" src="https://github.com/user-attachments/assets/4ffcbeb0-3060-4d8b-b399-4f2b573bca02" />
+
+/etc kansiosta löytää tarvittaessa runsaasti tietoa monenlaisista asioista tietokoneen ja käyttöjärjestelmän osalta. Allaolevassa kuvassa haettu tieto käytössä olevasta käyttöjärjestelmästä _cat /etc/os-release_ komennolla (cat, Concatenate, tällä haetaan tiettyjä haluttuja tietoja, /etc, haluttu kansio, os-release, pyydetään tietoja käyttöjärjestelmästä).
+
+<img width="1275" height="773" alt="Kuvakaappaus 2026-01-24 06-14-14" src="https://github.com/user-attachments/assets/d92a39d3-e3bf-440c-af41-902399aebc42" />
 
 /media (Esimerkiksi USB muistitikku näkyy täällä)
+Tässä kansiossa näkyvät irrotettavat medialaitteet kuten USB tikku tai ulkoinen kiintolevy. Minulla ei sellaisia tällä hetkellä ole kiinni.
 
 /var/log (Järjestelmän lokitiedot)
+Tässä kansiossa on lokitiedostot tietokoneen ja käyttöjärestelmän toiminnoista. Kotikäyttäjän ei oikeastaan tarvitse tässä kansiossa vierailla mutta ylläpitäjälle kansio on erittäin tärkeä. Etsin tietoa kyseisestä kansiosta ja mieleeni oli iskostunut tieto, että lokitiedostot tallentuvat kansioon _varlog_ tai _syslog_. Hämmennykseni oli suuri kun en löytänytkään kyseistä kansiota. Tässä kohtaa jouduin turvautumaan googleen selvittääkseni, mistä löydän lokitietoja. Apua sain debian julkaisun sivuilta seuraavasta osoitteesta: https://www.debian.org/releases/bookworm/arm64/release-notes/ch-information.en.html
+
+Löysin tiedon, että ensisijaisesti lokitietoja löytyy _journal_ kansiosta sekä _dpkg.log_ tiedostosta. Käytin komentoa tail -n 1 /var/log/dpkg.log (tail, näyttää "hännän" tiedoston loppupäästä. -n 1, number ja vain yksi rivi näytetään, loppuosa on tiedostopolkua josta tietoa haetaan). Tästä selviää viimeisin lokitieto joka on, että järjestelmä on asentanut jonkin ajurin tai tiedoston.
+
+<img width="1283" height="289" alt="Kuvakaappaus 2026-01-24 06-23-26" src="https://github.com/user-attachments/assets/73ab75a9-4fdc-470d-9333-69298f4c64ec" />
+
+## d) The friendly M
+Luennon jäljiltä jäin vielä miettimään erilaisia tapoja hakea ohjeita komentojen tekemiseen komentokehotteessa. Päätin kysyä Geminiltä vinkkejä asiaan ja sain seuraavia ideoita:
+ 
+ - _man_ (Manual) Perinteinen tapa ohjeiden etsimiseen tietyille komennoille. Esimerkiksi _man grep_ tarjoaa tietoa/ohjeita juuri _grep_ komennon käyttämiseen
+ - _apropos_ (aihepiirin mukainen haku) Jos et muista komennon nimeä mutta tiedät mitä haluat tehdä, voi _apropos_ komenolla etsiä komentoja jotka liittyvät asiaan jota haluat tehdä. Esimerkiksi _apropos "list directory_ tarjoaa vinkkejä millä komennoilla saat aiheeseen liittyviä asioita tehtyä.
+ - _--help_ tarjoaa pikaohjeen asiaan eikä näytä koko ohjekirjaa. Esimerkiksi _ls --help_ tietoa ls komennosta.
+ - _whatis_ on kätevä toiminto joka kertoo lyhyesti, yhdellä rivillä, mitä kyseinen komento tekee. Esimerkiksi _whatis grep_ tarjoaa lyhyen ja ytimekkään tiedon muistin tueksi, mitä komennolla tehdään.
+
+Kätevä toiminto/komento jonka löysin on _-i_ (ignore case) joka ohittaa "case sensitive" toiminnon. Komentorivihän on totaalisen tarkka isoista ja pienist kirjaimista muutoin. Tässä muutamia esimerkkejä _grep_ komennon käyttämisestä: 
