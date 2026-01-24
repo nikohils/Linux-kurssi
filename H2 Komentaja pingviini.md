@@ -86,8 +86,25 @@ Löysin tiedon, että ensisijaisesti lokitietoja löytyy _journal_ kansiosta sek
 Luennon jäljiltä jäin vielä miettimään erilaisia tapoja hakea ohjeita komentojen tekemiseen komentokehotteessa. Päätin kysyä Geminiltä vinkkejä asiaan ja sain seuraavia ideoita:
  
  - _man_ (Manual) Perinteinen tapa ohjeiden etsimiseen tietyille komennoille. Esimerkiksi _man grep_ tarjoaa tietoa/ohjeita juuri _grep_ komennon käyttämiseen
- - _apropos_ (aihepiirin mukainen haku) Jos et muista komennon nimeä mutta tiedät mitä haluat tehdä, voi _apropos_ komenolla etsiä komentoja jotka liittyvät asiaan jota haluat tehdä. Esimerkiksi _apropos "list directory_ tarjoaa vinkkejä millä komennoilla saat aiheeseen liittyviä asioita tehtyä.
+
+<img width="1277" height="769" alt="Kuvakaappaus 2026-01-24 07-24-09" src="https://github.com/user-attachments/assets/10fb635b-030f-41e5-a45a-4582e0dbf733" />
+
+ - _apropos_ (aihepiirin mukainen haku) Jos et muista komennon nimeä mutta tiedät mitä haluat tehdä, voi _apropos_ komenolla etsiä komentoja jotka liittyvät asiaan jota haluat tehdä. Esimerkiksi _apropos "list directory_ tarjoaa vinkkejä millä komennoilla saat aiheeseen liittyviä asioita tehtyä. Tykästyin tähän toimintoon sen vuoksi, että välillä on todella hankalaa muistaa komentojen tarkka kirjoitusmuoto.
+
+<img width="1277" height="776" alt="Kuvakaappaus 2026-01-24 07-26-46" src="https://github.com/user-attachments/assets/7aa33700-6e94-4fc4-98e1-01c92dcacbe0" />
+
  - _--help_ tarjoaa pikaohjeen asiaan eikä näytä koko ohjekirjaa. Esimerkiksi _ls --help_ tietoa ls komennosta.
+
+<img width="1276" height="774" alt="Kuvakaappaus 2026-01-24 07-30-05" src="https://github.com/user-attachments/assets/8430ffc3-7701-4136-ae67-58ee2e534c26" />
+
  - _whatis_ on kätevä toiminto joka kertoo lyhyesti, yhdellä rivillä, mitä kyseinen komento tekee. Esimerkiksi _whatis grep_ tarjoaa lyhyen ja ytimekkään tiedon muistin tueksi, mitä komennolla tehdään.
 
-Kätevä toiminto/komento jonka löysin on _-i_ (ignore case) joka ohittaa "case sensitive" toiminnon. Komentorivihän on totaalisen tarkka isoista ja pienist kirjaimista muutoin. Tässä muutamia esimerkkejä _grep_ komennon käyttämisestä: 
+<img width="1277" height="154" alt="Kuvakaappaus 2026-01-24 07-30-31" src="https://github.com/user-attachments/assets/ad76ac26-df62-414e-88e6-bc3ee9e59aac" />
+
+Kätevä toiminto/komento jonka löysin on _-i_ (ignore case) joka ohittaa "case sensitive" toiminnon. Komentorivihän on muutoin totaalisen tarkka isoista ja pienistä kirjaimista. Tällä komennolla etsin tekstiä "debian" aiemmin esitellystä /etc kansiosta. _ grep -i "debian" /etc/os-release_
+
+<img width="818" height="518" alt="Kuvakaappaus 2026-01-24 07-44-27" src="https://github.com/user-attachments/assets/f2dd8fc7-7d2d-4092-8aab-8cb493f3dc52" />
+
+Etsin omaan kyttäjätunnukseeni liittyviä tietoja komennolla _grep "nhi" /etc/passwd_. Esille tullut tieto vahvisti minun olevan ensimmäinen ihmiskäyttäjä koneella (1000). Sitä aiemmat käyttäjät (<1000) on varattu käyttöjärjestelmälle.
+
+<img width="821" height="515" alt="Kuvakaappaus 2026-01-24 07-50-24" src="https://github.com/user-attachments/assets/4eed5ca0-b241-49ef-9332-6017e8b386a1" />
