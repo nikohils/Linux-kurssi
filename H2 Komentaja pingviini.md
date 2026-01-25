@@ -102,7 +102,7 @@ Luennon jäljiltä jäin vielä miettimään erilaisia tapoja hakea ohjeita kome
 
 <img width="1277" height="154" alt="Kuvakaappaus 2026-01-24 07-30-31" src="https://github.com/user-attachments/assets/ad76ac26-df62-414e-88e6-bc3ee9e59aac" />
 
-Kätevä toiminto/komento jonka löysin on _-i_ (ignore case) joka ohittaa "case sensitive" toiminnon. Komentorivihän on muutoin totaalisen tarkka isoista ja pienistä kirjaimista. Tällä komennolla etsin tekstiä "debian" aiemmin esitellystä /etc kansiosta. _ grep -i "debian" /etc/os-release_
+Kätevä toiminto/komento jonka löysin on _-i_ (ignore case) joka ohittaa "case sensitive" toiminnon. Komentorivihän on muutoin totaalisen tarkka isoista ja pienistä kirjaimista. Tällä komennolla etsin tekstiä "debian" aiemmin esitellystä /etc kansiosta. _ grep -i "debian" /etc/os-release_.
 
 <img width="818" height="518" alt="Kuvakaappaus 2026-01-24 07-44-27" src="https://github.com/user-attachments/assets/f2dd8fc7-7d2d-4092-8aab-8cb493f3dc52" />
 
