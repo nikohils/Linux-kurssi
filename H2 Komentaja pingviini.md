@@ -50,7 +50,7 @@ Kokeiltaessa komentoa _htop_ (Hisham's top, nimetty kehittäjänsä mukaan) saat
 
 ## c) FHS - Filesystem Hierarchy Standard 24.1.2026 06:00 - 07:10.
 / (Juurihakemisto)
-Tässä kansiossa on juuri kaikelle ja kaikki kansiot sekä tiedostot näkyvät sen alla.
+Tämä kansio on juuri kaikelle ja kaikki kansiot sekä tiedostot näkyvät sen alla. Vähän samaan tapaan kuin Windows koneessa yleensä kaikki on aseman C: alla.
 
 <img width="825" height="518" alt="Kuvakaappaus 2026-01-24 06-06-01" src="https://github.com/user-attachments/assets/fd769699-78f2-4c45-8e43-fc8973230192" />
 
