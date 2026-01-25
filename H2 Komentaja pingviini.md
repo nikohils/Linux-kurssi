@@ -90,7 +90,7 @@ Luennon jäljiltä jäin vielä miettimään erilaisia tapoja hakea ohjeita kome
 
 <img width="1277" height="769" alt="Kuvakaappaus 2026-01-24 07-24-09" src="https://github.com/user-attachments/assets/10fb635b-030f-41e5-a45a-4582e0dbf733" />
 
- - _apropos_ (aihepiirin mukainen haku) Jos et muista komennon nimeä mutta tiedät mitä haluat tehdä, voi _apropos_ komenolla etsiä komentoja jotka liittyvät asiaan jota haluat tehdä. Esimerkiksi _apropos "list directory_ tarjoaa vinkkejä millä komennoilla saat aiheeseen liittyviä asioita tehtyä. Tykästyin tähän toimintoon sen vuoksi, että välillä on todella hankalaa muistaa komentojen tarkka kirjoitusmuoto.
+ - _apropos_ (aihepiirin mukainen haku) Jos et muista komennon nimeä mutta tiedät mitä haluat tehdä, voi _apropos_ komenolla etsiä komentoja jotka liittyvät asiaan jota haluat tehdä. Esimerkiksi _apropos "list directory"_ tarjoaa vinkkejä millä komennoilla saat aiheeseen liittyviä asioita tehtyä. Tykästyin tähän toimintoon sen vuoksi, että välillä on todella hankalaa muistaa komentojen tarkka kirjoitusmuoto.
 
 <img width="1277" height="776" alt="Kuvakaappaus 2026-01-24 07-26-46" src="https://github.com/user-attachments/assets/7aa33700-6e94-4fc4-98e1-01c92dcacbe0" />
 
