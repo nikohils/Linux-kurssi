@@ -4,7 +4,7 @@
 - Ympäristö: (Sama kuin kohdassa H1) Dell Precision M4600, Linux Mint käyttöjärjestelmä jossa asennettuna VirtualBox jossa Linux Debian 13.
 ## x) Command line basics:
 Komentorivin merkitys:
-Linuxin ja BSD:n komentorivi on säilynyt käytössä vuosikymmeniä (ennen Googlea ja Internetiä). Se on nopea, selkeä ja helppo automatisoida.
+- Linuxin ja BSD:n komentorivi on säilynyt käytössä vuosikymmeniä (ennen Googlea ja Internetiä). Se on nopea, selkeä ja helppo automatisoida.
 ## Navigointi ja tiedostojen hallinta:
 - _pwd_ (working directory), _ls_ (listaus) ja _cd_ (hakemiston vaihto) ovat perusliikkumista.
 - Tiedostojen katseluun käytetään _less_-komentoa (välilyönti kääntää sivua, q lopettaa).
