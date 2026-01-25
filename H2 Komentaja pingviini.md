@@ -83,7 +83,7 @@ Löysin tiedon, että ensisijaisesti lokitietoja löytyy _journal_ kansiosta sek
 
 <img width="1283" height="289" alt="Kuvakaappaus 2026-01-24 06-23-26" src="https://github.com/user-attachments/assets/73ab75a9-4fdc-470d-9333-69298f4c64ec" />
 
-## d) The friendly M
+## d) The friendly M 24.1.2026 07:15 - 08:20
 Luennon jäljiltä jäin vielä miettimään erilaisia tapoja hakea ohjeita komentojen tekemiseen komentokehotteessa. Päätin kysyä Geminiltä vinkkejä asiaan ja sain seuraavia ideoita:
  
  - _man_ (Manual) Perinteinen tapa ohjeiden etsimiseen tietyille komennoille. Esimerkiksi _man grep_ tarjoaa tietoa/ohjeita juuri _grep_ komennon käyttämiseen
@@ -110,19 +110,19 @@ Etsin omaan kyttäjätunnukseeni liittyviä tietoja komennolla _grep "nhi" /etc/
 
 <img width="821" height="515" alt="Kuvakaappaus 2026-01-24 07-50-24" src="https://github.com/user-attachments/assets/4eed5ca0-b241-49ef-9332-6017e8b386a1" />
 
-## e) Pipe eli "putket"
+## e) Pipe eli "putket" 25.1.2026 06:00 - 06:30
 Putket yhdistävät kaksi tai useamman komennon toisiinsa siten, että ne tekevät yhteistyötä. Putken " | " vasemmalla puolella oleva on ns. lähde ja oikealla puolella on komento. Jos haluaisin esimerkiksi etsiä tiedostoa ja käyttäisin pelkästään komentoa _ls "/kansionimi"_ saisin pahimmillaan satoja merkkejä ruudulle.
 Käyttämällä "Putkia" voidaan rajata ruudulle ilmestyvää tietoa. Ei kirjoiteta aiemmin mainittua komentoa vaan sen sijaan _ls /kansionimi | grep "tiedostonimi"_ saadaan haettua vain kyseistä etsittyä tietoa. Tässä voi olla tarpeen huomioida vielä _-i_ komento jotta ruudulle ilmestyy tiedot isoilla ja pienillä kirjaimilla.
 Tässä esimerkissä olen etsinyt koneeltani _grep_ komennolla kaikki .md päätteiset tiedostot (ne on tehty aiemmalla oppitunnilla). Käytin komentoa _ls -R | grep ".md"._ (ls meille olikin jo tuttu (listaus), -R 
 Recursive käy läpi hakemiston siitä alkaen missä kansiossa olet. Voit siis aloittaa juuresta esimerkiksi. | merkki tarkoittaa putki/pipe komentoa. grep (global regular expression print) halutun tiedon etsimiseen, "" lainausmerkeillä erotellaan etsittävä tieto.
 <img width="1033" height="558" alt="Kuvakaappaus 2026-01-25 06-15-29" src="https://github.com/user-attachments/assets/b4eb847c-80de-4a96-bf79-2f9e6d62a29f" />
 
-## f) Rauta
+## f) Rauta 25.1.2026 06:35 - 06:45
 Läksyjen mukaisesti siirryttiin tarkastelemaan tietokoneen rauta, eli hardware, puolta. Yritin ajaa komennon _sudo lshw -short -sanitize _ saadakseni tiedot näkyviin. Komentorivi ei kuitenkaan komentoa tunnistanut, joten asensin ensin lshw toiminnon komennolla _sudo apt install lshw_. Asennuksen jälkeen ajoin komennon uudelleen. Komento sisältää elementit _sudo_ (pääkäyttäjä), _lshw list hardware_, _-short_ lyhentää ja tiivistää listan siistimpään muotoon ja karsii tiedot keskeisiksi, _-sanitize_ poistaa esimerkiksi sarjanumerot ja huolehtii tiedon olevan yleispätevämpää eikä se sisällä arkaluonteisia tietoja.
 
 <img width="1196" height="762" alt="Kuvakaappaus 2026-01-25 06-17-33" src="https://github.com/user-attachments/assets/6bbd1c44-22dd-4f76-aea5-4c44b847a794" />
 
-### Mitä kone on "syönyt"?
+### Mitä kone on "syönyt"? 06:45 - 07:00
 Järjestelmä:
 - Ensimmäisellä rivillä näkyy teksti virtualbox. Tällä saamme tiedon, että käyttöjärjestelmä toimii virtuaalikoneessa eikä suoraan isäntäkoneessa.
 
