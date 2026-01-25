@@ -112,3 +112,30 @@ Etsin omaan kyttäjätunnukseeni liittyviä tietoja komennolla _grep "nhi" /etc/
 ## e) Pipe eli "putket"
 Putket yhdistävät kaksi tai useamman komennon toisiinsa siten, että ne tekevät yhteistyötä. Putken " | " vasemmalla puolella oleva on ns. lähde ja oikealla puolella on komento. Jos haluaisin esimerkiksi etsiä tiedostoa ja käyttäisin pelkästään komentoa _ls "/kansionimi"_ saisin pahimmillaan satoja merkkejä ruudulle.
 Käyttämällä "Putkia" voidaan rajata ruudulle ilmestyvää tietoa. Ei kirjoiteta aiemmin mainittua komentoa vaan sen sijaan _ls /kansionimi | grep "tiedostonimi"_ saadaan haettua vain kyseistä etsittyä tietoa. Tässä voi olla tarpeen huomioida vielä _-i_ komento jotta ruudulle ilmestyy tiedot isoilla ja pienillä kirjaimilla.
+Tässä esimerkissä olen etsinyt koneeltani _grep_ komennolla kaikki .md päätteiset tiedostot (ne on tehty aiemmalla oppitunnilla). Käytin komentoa _ls -R | grep ".md"._ (ls meille olikin jo tuttu (listaus), -R 
+Recursive käy läpi hakemiston siitä alkaen missä kansiossa olet. Voit siis aloittaa juuresta esimerkiksi. | merkki tarkoittaa putki/pipe komentoa. grep (global regular expression print) halutun tiedon etsimiseen, "" lainausmerkeillä erotellaan etsittävä tieto.
+<img width="1033" height="558" alt="Kuvakaappaus 2026-01-25 06-15-29" src="https://github.com/user-attachments/assets/b4eb847c-80de-4a96-bf79-2f9e6d62a29f" />
+
+## f) Rauta
+Läksyjen mukaisesti siirryttiin tarkastelemaan tietokoneen rauta, eli hardware, puolta. Yritin ajaa komennon _sudo lshw -short -sanitize _ saadakseni tiedot näkyviin. Komentorivi ei kuitenkaan komentoa tunnistanut, joten asensin ensin lshw toiminnon komennolla _sudo apt install lshw_. Asennuksen jälkeen ajoin komennon uudelleen. Komento sisältää elementit _sudo_ (pääkäyttäjä), _lshw list hardware_, _-short_ lyhentää ja tiivistää listan siistimpään muotoon ja karsii tiedot keskeisiksi, _-sanitize_ poistaa esimerkiksi sarjanumerot ja huolehtii tiedon olevan yleispätevämpää eikä se sisällä arkaluonteisia tietoja.
+
+<img width="1196" height="762" alt="Kuvakaappaus 2026-01-25 06-17-33" src="https://github.com/user-attachments/assets/6bbd1c44-22dd-4f76-aea5-4c44b847a794" />
+
+### Mitä kone on "syönyt"?
+Järjestelmä:
+- Ensimmäisellä rivillä näkyy teksti virtualbox. Tällä saamme tiedon, että käyttöjärjestelmä toimii virtuaalikoneessa eikä suoraan isäntäkoneessa.
+
+Muisti:
+- Virtuaalikoneelle on annettu RAM muistia (Random Access Memory) 8GiB käyttöön. GiB on hieman eri termi kuin GB mutta peruskäyttäjälle riittää tieto, että se on suurinpiirtein 8GB.
+
+Prosessori:
+- Isäntäkoneen prosessorin tiedot Intel Core i7-2720QM 2.20GHz
+
+Kiintolevy:
+- Levytilaa on virtuaalisesti yhteensä noin 53 GB josta käytettävissä on vielä noin 41GB.
+
+Verkko:
+- Verkkokortti 82540M Gigabit ethernet controller.
+
+Muut tiedot:
+- Lisäksi näkyy esimerkiksi erilaisia väylä, portti ja painiketietoja. Nämä voivat joissakin tilanteissa olla tarpeellisia mutta tällä kertaa emme paneudu niihin tarkemmin.
