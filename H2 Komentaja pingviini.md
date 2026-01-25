@@ -1,7 +1,7 @@
 # H2. Komentaja pingviini
-Päivämäärä: 22.1.2026
-Tekijä: Niko
-Ympäristö: (Sama kuin kohdassa H1) Dell Precision M4600, Linux Mint käyttöjärjestelmä jossa asennettuna VirtualBox jossa Linux Debian 13.
+- Päivämäärä: 22.1.2026
+- Tekijä: Niko
+- Ympäristö: (Sama kuin kohdassa H1) Dell Precision M4600, Linux Mint käyttöjärjestelmä jossa asennettuna VirtualBox jossa Linux Debian 13.
 ## x) Command line basics:
 Komentorivin merkitys: Linuxin ja BSD:n komentorivi on säilynyt käytössä vuosikymmeniä (ennen Googlea ja Internetiä), koska se on nopea, ilmaisuvoimainen ja helppo automatisoida.
 ## Navigointi ja tiedostojen hallinta:
