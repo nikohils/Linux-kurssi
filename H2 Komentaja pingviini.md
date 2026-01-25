@@ -79,7 +79,7 @@ Tässä kansiossa näkyvät irrotettavat medialaitteet kuten USB tikku tai ulkoi
 /var/log (Järjestelmän lokitiedot)
 Tässä kansiossa on lokitiedostot tietokoneen ja käyttöjärestelmän toiminnoista. Kotikäyttäjän ei oikeastaan tarvitse tässä kansiossa vierailla mutta ylläpitäjälle kansio on erittäin tärkeä. Etsin tietoa kyseisestä kansiosta ja mieleeni oli iskostunut tieto, että lokitiedostot tallentuvat kansioon _varlog_ tai _syslog_. Hämmennykseni oli suuri kun en löytänytkään kyseistä kansiota. Tässä kohtaa jouduin turvautumaan googleen selvittääkseni, mistä löydän lokitietoja. Apua sain debian julkaisun sivuilta seuraavasta osoitteesta: https://www.debian.org/releases/bookworm/arm64/release-notes/ch-information.en.html
 
-Löysin tiedon, että ensisijaisesti lokitietoja löytyy _journal_ kansiosta sekä _dpkg.log_ tiedostosta. Käytin komentoa tail -n 1 /var/log/dpkg.log (tail, näyttää "hännän" tiedoston loppupäästä. -n 1, number ja vain yksi rivi näytetään, loppuosa on tiedostopolkua josta tietoa haetaan). Tästä selviää viimeisin lokitieto joka on, että järjestelmä on asentanut jonkin ajurin tai tiedoston.
+Löysin tiedon, että ensisijaisesti lokitietoja löytyy _journal_ kansiosta sekä _dpkg.log_ tiedostosta. Käytin komentoa _tail -n 1 /var/log/dpkg.log_ (tail, näyttää "hännän" tiedoston loppupäästä. -n 1, number ja vain yksi rivi näytetään, loppuosa on tiedostopolkua josta tietoa haetaan). Tästä selviää viimeisin lokitieto joka on, että järjestelmä on asentanut jonkin ajurin tai tiedoston.
 
 <img width="1283" height="289" alt="Kuvakaappaus 2026-01-24 06-23-26" src="https://github.com/user-attachments/assets/73ab75a9-4fdc-470d-9333-69298f4c64ec" />
 
@@ -145,3 +145,4 @@ Muut tiedot:
 - https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 - Google Gemini (Asennettavien ohjelmien vinkki, komentojen selittäminen auki).
 - https://www.geeksforgeeks.org/linux-unix/curl-command-in-linux-with-examples/ (Curl komento)
+- https://www.debian.org/releases/bookworm/arm64/release-notes/ch-information.en.html
