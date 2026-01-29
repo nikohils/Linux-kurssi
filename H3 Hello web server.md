@@ -1,4 +1,4 @@
-# H2. Komentaja pingviini
+# H3. Hello web server
 - Päivämäärä: 29.1.2026
 - Tekijä: Niko
 - Ympäristö: (Sama kuin kohdassa H1) Dell Precision M4600, Linux Mint käyttöjärjestelmä jossa asennettuna VirtualBox jossa Linux Debian 13.
@@ -19,8 +19,8 @@ Käytin komentoa _sudo tail -1 /var/log/apache2/access.log_ saadakseni lokitiedo
 - Avasin nettisivut selaimessa jolla en ollut käsitellyt nettisivua. En kuitenkaan saanut lokitiedostoa päivittymään.
 - Komennolla _systemctl status apache2 _kokeilin onko palvelin varmasti käynnissä, johon sain tiedon _running._
 Tässä vaiheessa en enää keksinyt ongelmaa, vaan turvauduin tekoälyn apuun (Gemini). Siltä sain vihjeeksi tarkastaa tiedoston jota apache muokkaa. Tähän käytettiin komentoa _ls -ltr /var/log/apache2/_. Sain kolme tiedostoa jotka olivat access.log, error.log sekä other_vhosts_access.log joista viimeisin oli päivittynyt oikea aikaisesti. Kokeilin aiempaa _sudo tail -1 /var/log/apache2/other_vhosts_access.log_ komentoa tähän tiedostoon ja sain lokitiedon joka kohtasi tämä hetken kanssa. Pyysin Geminiä selittämään minulle tilanteen. Sain vastaukseksi seuraavaa:
-_- Oletusasetukset: Apachen asennuksen mukana tulee globaali asetus (löytyy yleensä tiedostosta /etc/apache2/conf-enabled/other-vhosts-access-log.conf). Se sanoo palvelimelle: "Jos pyyntö tulee nimellä tai IP-osoitteella, jolle ei ole määritetty omaa, erillistä lokitiedostoa, kirjoita se tänne."_
-_Log-prioriteetti: Jos oletus-konfiguraatiossa (000-default.conf) ei ole erikseen määritelty CustomLog-direktiiviä osoittamaan access.log-tiedostoon, tai jos kutsut palvelinta tavalla, jota Apache ei täysin yhdistä tiettyyn sivustoon, se turvautuu tähän "kaikkien muiden" lokiin._
-Tästä sain havainnon, että apachelle pitää kertoa mikäli lokitiedot halutaan tiettyyn paikkaan. Tai sitten on vain tiedettävä se, minne lokit menevät.
+- _- Oletusasetukset: Apachen asennuksen mukana tulee globaali asetus (löytyy yleensä tiedostosta /etc/apache2/conf-enabled/other-vhosts-access-log.conf). Se sanoo palvelimelle: "Jos pyyntö tulee nimellä tai IP-osoitteella, jolle ei ole määritetty omaa, erillistä lokitiedostoa, kirjoita se tänne."_
+- _Log-prioriteetti: Jos oletus-konfiguraatiossa (000-default.conf) ei ole erikseen määritelty CustomLog-direktiiviä osoittamaan access.log-tiedostoon, tai jos kutsut palvelinta tavalla, jota Apache ei täysin yhdistä tiettyyn sivustoon, se turvautuu tähän "kaikkien muiden" lokiin._
+- Tästä sain havainnon, että apachelle pitää kertoa mikäli lokitiedot halutaan tiettyyn paikkaan. Tai sitten on vain tiedettävä se, minne lokit menevät.
 
 
