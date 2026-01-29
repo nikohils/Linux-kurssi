@@ -22,7 +22,18 @@ Tässä vaiheessa en enää keksinyt ongelmaa, vaan turvauduin tekoälyn apuun (
 - _- Oletusasetukset: Apachen asennuksen mukana tulee globaali asetus (löytyy yleensä tiedostosta /etc/apache2/conf-enabled/other-vhosts-access-log.conf). Se sanoo palvelimelle: "Jos pyyntö tulee nimellä tai IP-osoitteella, jolle ei ole määritetty omaa, erillistä lokitiedostoa, kirjoita se tänne."_
 - _Log-prioriteetti: Jos oletus-konfiguraatiossa (000-default.conf) ei ole erikseen määritelty CustomLog-direktiiviä osoittamaan access.log-tiedostoon, tai jos kutsut palvelinta tavalla, jota Apache ei täysin yhdistä tiettyyn sivustoon, se turvautuu tähän "kaikkien muiden" lokiin._
 - Tästä sain havainnon, että apachelle pitää kertoa mikäli lokitiedot halutaan tiettyyn paikkaan. Tai sitten on vain tiedettävä se, minne lokit menevät.
-- 
+
 <img width="1206" height="212" alt="Kuvakaappaus 2026-01-29 16-51-58" src="https://github.com/user-attachments/assets/8a5e2c5f-8856-4837-9148-9958f24591ca" />
 
-
+Ylläolevassa kuvassa näkyy lokimerkintä jonka sain. Lokitiedoston merkinnöistä sain selville seuraavaa pohdittuani vähän aikaa näkemääni:
+- zxcv.example.com:80 -> Koneeseeni asettama käyttäjänimi johon pyyntö kohdistui. Portti on 80 eli salaamaton HTTP liikenteen portti.
+- 127.0.0.1 -> Asiakkaan/vierailijan IP osoite. Koska vierailin omalla palvelimellani omalta koneeltani, näkyy tässä LocalHost osoite.
+- - - -> Liittyvät tunnistautumistietoihin jos ne ovat käytössä.
+- 29/Jan/2026:16:28:28 +0200 -> Pyynnön aikaleima ja aikavyöhyke.
+- GET /favicon.ico HTTP/1.1 -> Pyydetty sivuston kuvaketta (Karvisen luennolla mainittu favicon) käytetty HTTP/1.1 protokollaa.
+- 404 -> favicon pyynnön perässä ilmaisee, ettei kuvaketta ole löytynyt "Not found".
+- 487 -> Vastauksen koko tavuina.
+- http://localhost/ -> Sivun osoite josta pyyntö saanut alkunsa.
+- Mozilla/5.0 -> Käytetty selain.
+- X11; Linux x86_64 -> Käytetty käyttöjärjestelmä sekä prosessoriarkkitehtuuri ja 64 bittinen järjestelmä.
+- 
