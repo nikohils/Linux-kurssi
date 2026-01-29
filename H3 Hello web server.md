@@ -22,5 +22,7 @@ Tässä vaiheessa en enää keksinyt ongelmaa, vaan turvauduin tekoälyn apuun (
 - _- Oletusasetukset: Apachen asennuksen mukana tulee globaali asetus (löytyy yleensä tiedostosta /etc/apache2/conf-enabled/other-vhosts-access-log.conf). Se sanoo palvelimelle: "Jos pyyntö tulee nimellä tai IP-osoitteella, jolle ei ole määritetty omaa, erillistä lokitiedostoa, kirjoita se tänne."_
 - _Log-prioriteetti: Jos oletus-konfiguraatiossa (000-default.conf) ei ole erikseen määritelty CustomLog-direktiiviä osoittamaan access.log-tiedostoon, tai jos kutsut palvelinta tavalla, jota Apache ei täysin yhdistä tiettyyn sivustoon, se turvautuu tähän "kaikkien muiden" lokiin._
 - Tästä sain havainnon, että apachelle pitää kertoa mikäli lokitiedot halutaan tiettyyn paikkaan. Tai sitten on vain tiedettävä se, minne lokit menevät.
+- 
+<img width="1206" height="212" alt="Kuvakaappaus 2026-01-29 16-51-58" src="https://github.com/user-attachments/assets/8a5e2c5f-8856-4837-9148-9958f24591ca" />
 
 
