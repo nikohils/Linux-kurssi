@@ -61,4 +61,18 @@ Seuraavaksi todennettiin selaimessa nettisivun toimivuus.
 
 <img width="1192" height="353" alt="Kuvakaappaus 2026-01-31 06-56-38" src="https://github.com/user-attachments/assets/b13bf541-b7b7-41ab-9b43-f79219e70414" />
 
-Lopuksi vielä curl komennolla otettu 
+## f) CURL esimerkit
+_curl hattu.example.com_ komennolla saadaan näkyviin sivuston lähdekoodi.
+
+<img width="622" height="298" alt="Kuvakaappaus 2026-01-31 06-57-14" src="https://github.com/user-attachments/assets/4ebef6c3-3b0e-4f3c-97f6-7bb7b6712ac6" />
+
+curl -I hattu.example.com komennolla saadaan näkyviin palvelimen taustadataa sivustosta.
+
+<img width="532" height="242" alt="kuva" src="https://github.com/user-attachments/assets/5c063a88-abb2-43d9-bd6c-fc6412dfdc08" />
+
+Tästä meille selviää seuraavia tietoja:
+- HTTP/1.1 200 OK ->	Statusrivi. Kertoo, että pyyntö onnistui (200 OK). Jos tiedostoa ei löytyisi, tässä lukisi 404 Not Found.
+- Server: Apache/2.4.58 (Ubuntu) ->	Palvelinohjelmisto. Kertoo, mikä web-palvelin ja versio on käytössä sekä käyttöjärjestelmän (Ubuntu). (Tässä todettakoot, että en suorittanut tehtäviä virtuaalikoneessa pyörivässä Debianissa, vaan peruskäyttöjärjestelmänä toimivassa Linux Mintissä).
+- Content-Length 265: ->	Sisällön koko. Kertoo tavuina, kuinka suuri lähetetty HTML-tiedosto on.
+Last-Modified: Sat, 31 Jan 2026 04:55:21 GMT ->	Muokkausaika. Kertoo, milloin index.html-tiedostoa on viimeksi muutettu. Selain käyttää tätä välimuistin hallintaan. (Tästä jää jostain syystä pois GMT +0200).
+Content-Type: text/html ->	Tiedostotyyppi. Kertoo selaimelle, että kyseessä on HTML-dokumentti, jotta se osaa renderöidä sen oikein tekstin sijaan.
