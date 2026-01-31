@@ -2,7 +2,7 @@
 - Päivämäärä: 29.1.2026
 - Tekijä: Niko
 - Ympäristö: (Sama kuin kohdassa H1) Dell Precision M4600, Linux Mint käyttöjärjestelmä jossa asennettuna VirtualBox jossa Linux Debian 13.
-## x) Tiivistelmät
+## x) Tiivistelmät 29.1.2026 19:15 - 19:45
 The Apache software foundation 2023
 - **Toimintaperiaate**: Name-based virtual hosting mahdollistaa useiden eri verkkosivustojen isännöinnin samassa IP-osoitteessa. Palvelin erottaa sivustot toisistaan selaimen lähettämän HTTP "Host"-otsikon perusteella.
 - **Oletussivosto**: Jos pyyntö ei täsmää mihinkään määritettyyn ServerName- tai ServerAlias-asetukseen, Apache käyttää konfiguraatiotiedoston ensimmäistä listattua virtuaali-isäntää oletuksena.
@@ -13,7 +13,7 @@ Tero Karvinen
 - **Käyttäjäoikeudet**: Karvinen korostaa hyvää tapaa sijoittaa verkkosivut käyttäjän kotihakemistoon (esim. public_html), jolloin niitä voi muokata ilman pääkäyttäjän (sudo) oikeuksia.
 - ## a) Testaus
 Tämä vaihe tehtiin harjoitteena luennon aikana joten vaiheesta ei ole dokumentaatiota.
-## b) Lokirivit
+## b) Lokirivit 29.1.2026 19:45 - 20:30
 Käytin komentoa _sudo tail -1 /var/log/apache2/access.log_ saadakseni lokitiedot nettisivustani. Tulokseksi sain kuitenkin vain lokitietoja joita oli tallentunut tiistaina 27.1. tehdessämme tehtävää. Kokeilin seuraavia asioita ongelmaan:
 - Latasin sivun uusiksi muutamilla eri tavoilla (sisältäen ctrl + F5) näppäinyhdistelmän.
 - Avasin nettisivut selaimessa jolla en ollut käsitellyt nettisivua. En kuitenkaan saanut lokitiedostoa päivittymään.
@@ -36,4 +36,29 @@ Ylläolevassa kuvassa näkyy lokimerkintä jonka sain. Lokitiedoston merkinnöis
 - http://localhost/ -> Sivun osoite josta pyyntö saanut alkunsa.
 - Mozilla/5.0 -> Käytetty selain.
 - X11; Linux x86_64 -> Käytetty käyttöjärjestelmä sekä prosessoriarkkitehtuuri ja 64 bittinen järjestelmä.
-- 
+
+## c) Etusivu uusiksi 31.1.2026 06:00 - 06:50
+Tämä tehtävähän tehtiin jo oppitunnilla eikä tässä pitänyt olla mitään hankalaa. Muutaman nukutun yön jälkeen kuitenkin tuntui, että pää oli formatoinut hankitun osaamisen ja tiedon. Jouduin vaihtelemaan kansioita useasti, tarkastamaan tiedostoja, palaamaan aiemmin opetettuun ja muistelemaan, että mitä tehtiin ja miksi. Dokumentaation tekeminen suoritetuista tempuista jäi uupumaan, koska prosessointiteho meni tehtävänannon sisäistämiseen sekä aiemmin opitun kertaamiseen.
+
+<img width="565" height="70" alt="Kuvakaappaus 2026-01-31 06-40-27" src="https://github.com/user-attachments/assets/aae86910-da17-46ee-bb7c-6cd0ae92a6c5" />
+
+Ohessa näkyy tehtävänannossa mainittu hattu.conf tiedoston luonti.
+
+<img width="864" height="71" alt="Kuvakaappaus 2026-01-31 06-42-13" src="https://github.com/user-attachments/assets/2c915cb5-db12-4278-997b-e97b7864fd7d" />
+
+Ohessa näkyy tehtävänannossa mainittu tieto uudesta serverinimestä.
+
+<img width="507" height="188" alt="Kuvakaappaus 2026-01-31 06-45-03" src="https://github.com/user-attachments/assets/40c2dc48-8661-4604-b96b-dea8c75e2329" />
+
+Ohessa näkyy curl komennolla haettu tieto sivuston sisällöstä.
+
+## e) Validi HTML5 sivu 31.1.2026 06:55 - 
+Muokattiin index.html tiedostoa HTML koodilla siten, että sivusto saatiin jo tekemään jotakin normaalin nettisivun kaltaisia temppuja. Sivustossa käytettiin otsikointia (h1) sekä tekstiriviä (p). Merkistöksi asetettiin UTF-8 jotta myös ääkköset näkyvät.
+
+<img width="975" height="358" alt="Kuvakaappaus 2026-01-31 06-56-19" src="https://github.com/user-attachments/assets/1259c9f8-796f-4f7a-b397-c1261880f5bd" />
+
+Seuraavaksi todennettiin selaimessa nettisivun toimivuus.
+
+<img width="1192" height="353" alt="Kuvakaappaus 2026-01-31 06-56-38" src="https://github.com/user-attachments/assets/b13bf541-b7b7-41ab-9b43-f79219e70414" />
+
+Lopuksi vielä curl komennolla otettu 
