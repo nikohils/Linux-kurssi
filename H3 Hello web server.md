@@ -76,3 +76,5 @@ Tästä meille selviää seuraavia tietoja:
 - Content-Length 265: ->	Sisällön koko. Kertoo tavuina, kuinka suuri lähetetty HTML-tiedosto on.
 Last-Modified: Sat, 31 Jan 2026 04:55:21 GMT ->	Muokkausaika. Kertoo, milloin index.html-tiedostoa on viimeksi muutettu. Selain käyttää tätä välimuistin hallintaan. (Tästä jää jostain syystä pois GMT +0200).
 Content-Type: text/html ->	Tiedostotyyppi. Kertoo selaimelle, että kyseessä on HTML-dokumentti, jotta se osaa renderöidä sen oikein tekstin sijaan.
+
+## Tiivistelmä
