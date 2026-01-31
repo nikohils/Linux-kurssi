@@ -37,7 +37,7 @@ Ylläolevassa kuvassa näkyy lokimerkintä jonka sain. Lokitiedoston merkinnöis
 - Mozilla/5.0 -> Käytetty selain.
 - X11; Linux x86_64 -> Käytetty käyttöjärjestelmä sekä prosessoriarkkitehtuuri ja 64 bittinen järjestelmä.
 
-## c) Etusivu uusiksi 31.1.2026 06:00 - 06:50
+## c) Etusivu uusiksi 31.1.2026 06:00 - 06:45
 Tämä tehtävähän tehtiin jo oppitunnilla eikä tässä pitänyt olla mitään hankalaa. Muutaman nukutun yön jälkeen kuitenkin tuntui, että pää oli formatoinut hankitun osaamisen ja tiedon. Jouduin vaihtelemaan kansioita useasti, tarkastamaan tiedostoja, palaamaan aiemmin opetettuun ja muistelemaan, että mitä tehtiin ja miksi. Dokumentaation tekeminen suoritetuista tempuista jäi uupumaan, koska prosessointiteho meni tehtävänannon sisäistämiseen sekä aiemmin opitun kertaamiseen.
 
 <img width="565" height="70" alt="Kuvakaappaus 2026-01-31 06-40-27" src="https://github.com/user-attachments/assets/aae86910-da17-46ee-bb7c-6cd0ae92a6c5" />
@@ -52,7 +52,7 @@ Ohessa näkyy tehtävänannossa mainittu tieto uudesta serverinimestä.
 
 Ohessa näkyy curl komennolla haettu tieto sivuston sisällöstä.
 
-## e) Validi HTML5 sivu 31.1.2026 06:55 - 
+## e) Validi HTML5 sivu 31.1.2026 06:45 - 07:00
 Muokattiin index.html tiedostoa HTML koodilla siten, että sivusto saatiin jo tekemään jotakin normaalin nettisivun kaltaisia temppuja. Sivustossa käytettiin otsikointia (h1) sekä tekstiriviä (p). Merkistöksi asetettiin UTF-8 jotta myös ääkköset näkyvät.
 
 <img width="975" height="358" alt="Kuvakaappaus 2026-01-31 06-56-19" src="https://github.com/user-attachments/assets/1259c9f8-796f-4f7a-b397-c1261880f5bd" />
@@ -61,7 +61,7 @@ Seuraavaksi todennettiin selaimessa nettisivun toimivuus.
 
 <img width="1192" height="353" alt="Kuvakaappaus 2026-01-31 06-56-38" src="https://github.com/user-attachments/assets/b13bf541-b7b7-41ab-9b43-f79219e70414" />
 
-## f) CURL esimerkit
+## f) CURL esimerkit 31.1.2026 07:00 - 07:20
 _curl hattu.example.com_ komennolla saadaan näkyviin sivuston lähdekoodi.
 
 <img width="622" height="298" alt="Kuvakaappaus 2026-01-31 06-57-14" src="https://github.com/user-attachments/assets/4ebef6c3-3b0e-4f3c-97f6-7bb7b6712ac6" />
