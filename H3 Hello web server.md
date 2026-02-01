@@ -77,20 +77,24 @@ Tästä meille selviää seuraavia tietoja:
 Last-Modified: Sat, 31 Jan 2026 04:55:21 GMT ->	Muokkausaika. Kertoo, milloin index.html-tiedostoa on viimeksi muutettu. Selain käyttää tätä välimuistin hallintaan. (Tästä jää jostain syystä pois GMT +0200).
 Content-Type: text/html ->	Tiedostotyyppi. Kertoo selaimelle, että kyseessä on HTML-dokumentti, jotta se osaa renderöidä sen oikein tekstin sijaan.
 
-## Tiivistelmä
-Vaihe,Toimenpide,Miksi?
-x) Teoria,Dokumentaation lukeminen.,"Ymmärretään, että Apache valitsee sivuston HTTP-otsikon ""Host""-kentän perusteella."
+## Tiivistelmä 31.1.2026 07:30 - 07:45
+Aihe oli itselleni jostain syystä hankala. Temput joita tehtiin eivät olleet vaikeita mutta jostain syystä tunsin usein kadottavani punaisen langan. Mitä teen? Miksi teen? Missä piti tehdä? Yksi apukeino tähän oli avata kaksi komentokehotetta, joista toiseen kirjoitin komentoja nettisivun edistämiseksi ja toisessa tarkastin eri kansioita, kansiorakenteita, tiedostonimiä jne. Tämähän ei toki onnistuisi tyhjällä palvelimella mutta käytin sitä apuna nyt kun se oli mahdollista. Aiheesta lienee tarpeellista tehdä itselleni jonkinlainen "cheatsheet" mikäli tätä alkaisi tekemään uudelleen.
 
-b) Lokit,access.log analysointi.,"Opitaan näkemään, kuka palvelimella käy, millä selaimella ja mitä he yrittävät ladata."
+x) Dokumentaation lukeminen: Ymmärretään, että Apache valitsee sivuston HTTP-otsikon "Host"-kentän perusteella.
 
-c) Konfiguraatio,.conf-tiedoston luominen /etc/apache2/sites-available/ -kansioon.,"Luodaan ""ohjekirja"", joka yhdistää nimen hattu.example.com tiettyyn kansioon."
+b) Lokit,access.log analysointi: Opitaan näkemään, kuka palvelimella käy, millä selaimella ja mitä he yrittävät ladata.
 
-c) DNS-simulaatio,/etc/hosts -tiedoston muokkaus.,"Huijataan oma tietokone uskomaan, että keksitty domain-nimi löytyy omalta koneelta."
+c) Konfiguraatio: .conf-tiedoston luominen /etc/apache2/sites-available/ -kansioon. Luodaan "ohjekirja", joka yhdistää nimen hattu.example.com tiettyyn kansioon.
 
-c) Kotihakemisto,Sivun siirto kansioon ~/publicsites/.,Mahdollistetaan sivun muokkaus tavallisena käyttäjänä ilman sudoa.
+c) Kotihakemisto: Sivun siirto kansioon ~/publicsites/. Mahdollistetaan sivun muokkaus tavallisena käyttäjänä ilman sudoa.
 
-c) Oikeudet,chmod a+x kotihakemistolle.,"Annetaan Apache-palvelimelle (www-data) lupa lukea tiedostosi, mutta ei muokata niitä."
+c) Oikeudet: chmod a+x kotihakemistolle. Annetaan Apache-palvelimelle (www-data) lupa lukea tiedostosi, mutta ei muokata niitä.
 
-e) Standardit,Validi HTML5-koodi.,"Varmistetaan, että sivu näkyy oikein kaikilla selaimilla ja noudattaa virallisia sääntöjä."
+e) Standardit: Validi HTML5-koodi. Varmistetaan, että sivu näkyy oikein kaikilla selaimilla ja noudattaa virallisia sääntöjä.
 
-f) Testaus,curl -I ja curl.,"Varmistetaan komentoriviltä, että palvelin vastaa oikeilla otsakkeilla (kuten 200 OK)."
+f) Testaus: curl -I ja curl. Varmistetaan komentoriviltä, että palvelin vastaa oikeilla otsakkeilla (kuten 200 OK).
+
+## Lähteet:
+https://httpd.apache.org/docs/2.4/vhosts/name-based.html
+https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+Google Gemini 
