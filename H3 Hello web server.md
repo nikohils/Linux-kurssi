@@ -78,3 +78,12 @@ Last-Modified: Sat, 31 Jan 2026 04:55:21 GMT ->	Muokkausaika. Kertoo, milloin in
 Content-Type: text/html ->	Tiedostotyyppi. Kertoo selaimelle, että kyseessä on HTML-dokumentti, jotta se osaa renderöidä sen oikein tekstin sijaan.
 
 ## Tiivistelmä
+Vaihe,Toimenpide,Miksi?
+x) Teoria,Dokumentaation lukeminen.,"Ymmärretään, että Apache valitsee sivuston HTTP-otsikon ""Host""-kentän perusteella."
+b) Lokit,access.log analysointi.,"Opitaan näkemään, kuka palvelimella käy, millä selaimella ja mitä he yrittävät ladata."
+c) Konfiguraatio,.conf-tiedoston luominen /etc/apache2/sites-available/ -kansioon.,"Luodaan ""ohjekirja"", joka yhdistää nimen hattu.example.com tiettyyn kansioon."
+c) DNS-simulaatio,/etc/hosts -tiedoston muokkaus.,"Huijataan oma tietokone uskomaan, että keksitty domain-nimi löytyy omalta koneelta."
+c) Kotihakemisto,Sivun siirto kansioon ~/publicsites/.,Mahdollistetaan sivun muokkaus tavallisena käyttäjänä ilman sudoa.
+c) Oikeudet,chmod a+x kotihakemistolle.,"Annetaan Apache-palvelimelle (www-data) lupa lukea tiedostosi, mutta ei muokata niitä."
+e) Standardit,Validi HTML5-koodi.,"Varmistetaan, että sivu näkyy oikein kaikilla selaimilla ja noudattaa virallisia sääntöjä."
+f) Testaus,curl -I ja curl.,"Varmistetaan komentoriviltä, että palvelin vastaa oikeilla otsakkeilla (kuten 200 OK)."
