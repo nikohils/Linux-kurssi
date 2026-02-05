@@ -18,7 +18,7 @@
 ## a) Palvelimen vuokraaminen 3.2.2026 14:00 - 16:45
 - Tämä vaihe toteutettiin luentojen yhteydessä joten sitä ei dokumentoitu.
 
-## b) Alkutoimet palvelimella 5.2. 19:25 - 
+## b) Alkutoimet palvelimella 5.2.2026 19:25 - 20:20
 - Kirjautuminen omalle palvelimelleni UpCloudin palvelussa. IP osoite otettu omalta sivultani kirjauduttani tunnuksillani sivustolle. Kirjautuminen tapahtuu komennolla ssh root@_IP osoite_.
 
 - Seuraavaksi palvelimen päivittäminen _apt update && apt full-upgrade_. Näissä ei tarvita tässä vaiheessa sudo etuliitettä, koska alkuvaiheessa olemme kirjautuneet "roottina".
@@ -37,4 +37,8 @@ Palomuurin konfiguroinnin jälkeen käynnistämme palomuurin _ufw enable_ komenn
   - SSH kirjautuminen on erittäin tietoturvallista. On tärkeää, että käyttöoikeus PKI (Public Key Infrastructure) avaimeen on kunnossa. Jos SSH avainkansion omistaja on joku muu kuin kirjautuja, ei kirjautuminen onnistu. Käyttöoikeuden pitää olla käyttäjällä (ja mahdollisesti rootilla) jotta kukaan muu ei pääse muokkaamaan SSH kansion PKI avainta.
 - Lopuksi kirjautuminen saatiin onnistumaan uudella Niko käyttäjällä. Testataan tunnuksen toimivuus päivittämällä järjestelmä _sudo apt upgrade -y_. Nyt sudo komento on tarpeellinen, koska olemme tavallinen käyttäjä ja tarvitsemme sudo oikeuksia erikseen.
 
-- 
+- Seuraavaksi lukitaan root tunnus ja tehdään pieni "palvelimen koventamisen" toimenpide seuraavilla komennoilla:
+  - sudo usermod --lock root (Tavallaan lukitsee root käyttäjätunnuksen muuttamalla rootin salasanan hash tietoa. Näin syötetyt salasanat eivät enää täsmää olemassaolevaan). Root tunnuksen käyttäminen ei siis ole mahdollista, vaan kaikki tehdyt toimenpiteet täytyy tehdä kirjautuneena käyttäjän, josta jää lokimerkintä.
+  - sudo mv -nv /root/.ssh /root/DISABLED-ssh/ (SSH avain eli PKI avain siirretään pois oletuskansiosta. Näin se pysyy tallessa mutta ei ole siellä mistä järjestelmä sitä automaattisesti etsii).
+
+## c) Webbipalvelimen asennus 5.2.2026 20:25 - 
